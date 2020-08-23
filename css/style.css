@@ -52,12 +52,16 @@ label:active:after {
 }	
 /* Switch button end*/
 
-body:after {
+body {
+    background: hsl(0, 0%, 100%);
+}
+
+body:before {
     content:"";
     background:hsl(225, 100%, 98%);
-    position:fixed;
-    top:0;
-    bottom:60%;
+    position: absolute;
+    top: 0;
+    bottom: 80%;
     right:0;
     left:0;
     z-index:-1;
@@ -74,6 +78,10 @@ body:after {
     margin: 0 auto;
 }
 
+/* Main section start */
+.main {
+    margin-bottom: 50px;
+}
 
 /* Header start*/
 .header {
@@ -116,6 +124,11 @@ body:after {
     align-items: center;
     text-align: center;
     background: hsl(227, 47%, 96%);
+}
+
+.main_card:hover {
+    cursor: pointer;
+    background: hsl(229, 12%, 82%);
 }
 
 .main_card_facebook {
@@ -186,8 +199,70 @@ body:after {
 }
 
 /* Cards end */
+/* Main section end */
 
 
+/* Overview Section start*/
+
+.overview_container {
+    justify-content: space-between;
+}
+
+.overview_heading {
+    width: 100%;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.overview_card {
+    padding: 3% 2%;
+    width: 23%;
+    text-align: center;
+    background: hsl(227, 47%, 96%);
+    margin-bottom: 30px;
+}
+
+.overview_card:hover {
+    cursor: pointer;
+    background: hsl(229, 12%, 82%);
+}
+
+.overview_card_title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(228, 12%, 44%);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.overview_card_stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: hsl(230, 17%, 14%);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.overview_card_stat .stat_asc {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+}
+
+.overview_card_stat .stat_des {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: hsl(356, 69%, 56%);
+    font-weight: 700;
+}
+/* Overview Section end*/
 
 
 
