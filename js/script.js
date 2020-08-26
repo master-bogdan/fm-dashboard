@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const overviewTitle = document.querySelector('.overview_heading');
     const overviewCards = document.querySelectorAll('.overview_card');
     const overviewCardTitle = document.querySelectorAll('.overview_card_stat');
-    console.log(mainCardBg);
 
     switcher.addEventListener('change',(event) => {
         console.log(event.target.checked);
