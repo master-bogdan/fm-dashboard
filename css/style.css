@@ -307,7 +307,7 @@ body:before {
 /* Overview Section end*/
 
 /* Mobile adaptation */
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
     label {
         width: 55px;
         height: 25px;
