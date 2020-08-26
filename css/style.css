@@ -213,6 +213,7 @@ body:before {
     color: hsl(228, 12%, 44%);
     font-weight: 700;
     font-size: 23px;
+    margin-bottom: 20px;
 }
 
 .overview_card {
@@ -264,7 +265,55 @@ body:before {
 }
 /* Overview Section end*/
 
+/* Mobile adaptation */
+@media (max-width: 375px) {
+    label {
+        width: 55px;
+        height: 25px;
+        border-radius: 25px;
+    }
 
+    label:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    body:before {
+        bottom: 70%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header_heading {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .header_subtitle {
+        font-weight: 700;
+        
+    }
+
+    .header_toggle {
+        width: 100%;
+        border-top: 1px solid black;
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    .header_toggle_title {
+        color: hsl(228, 12%, 44%);
+        font-weight: 700;
+    }
+
+    .main_card {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 25px 0;
+    }
+}
 
 
 
